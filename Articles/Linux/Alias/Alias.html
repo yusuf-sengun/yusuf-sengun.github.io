@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>Alias</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yusuf Şengün">
+    <meta name="author" content="Alias">    
+   
+
+    <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
+  
+    <link id="theme-style" rel="stylesheet" href="../../../assets/css/theme-1.css">
+    
+
+</head> 
+
+<body>
+    
+    <header class="header text-center">	    
+	    <h1 class="blog-name pt-lg-4 mb-0"><a href="../../../index.html">Yusuf's Blog</a></h1>
+        
+	    <nav class="navbar navbar-expand-lg navbar-dark" >
+           
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div id="navigation" class="collapse navbar-collapse flex-column" >
+				<div class="profile-section pt-3 pt-lg-0">
+				    <img class="profile-image mb-3 rounded-circle mx-auto" src="../../../assets/images/profile.png" alt="image" >			
+					
+					<div class="bio mb-3">Hi, my name is Yusuf Şengün. I'm currently working at Telenity and student at IKU.<br><a href="../../../about.html">Find out more about me</a></div><!--//bio-->
+					<ul class="social-list list-inline py-3 mx-auto">
+						<li class="list-inline-item"><a href="https://twitter.com/yusufsngn" target="_blank"><i class="fab fa-twitter fa-fw"></i></a></li>
+			            <li class="list-inline-item"><a href="https://www.linkedin.com/in/yusuf-%C5%9Feng%C3%BCn-3a3784193/" target="_blank"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
+			            <li class="list-inline-item"><a href="https://github.com/yusuf-sengun" target="_blank"><i class="fab fa-github-alt fa-fw" ></i></a></li>
+			            <li class="list-inline-item"><a href="https://stackoverflow.com/users/13859175/yusuf-%c5%9eeng%c3%bcn" target="_blank"><i class="fab fa-stack-overflow fa-fw"></i></a></li>
+			         </ul><!--//social-list-->
+					 <p>yusuffsengun@gmail.com</p>
+			        <hr> 
+				</div><!--//profile-section-->
+				
+				<ul class="navbar-nav flex-column text-left">
+					<li class="nav-item">
+					    <a class="nav-link" href="../../../index.html"><i class="fas fa-home fa-fw mr-2"></i>Blog Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+					    <a class="nav-link" href="../../../about.html"><i class="fas fa-user fa-fw mr-2"></i>About Me</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+    </header>
+    
+    <div class="main-wrapper">
+	    
+	    <article class="blog-post px-3 py-5 p-md-5">
+		    <div class="container">
+				<div style="position: fixed;top:10px;right:20px;">
+					<p><a href="./AliasTr.html" style="color:darkgreen;">TR</a>/EN</p>
+				</div>
+			    <header class="blog-post-header">
+				    <h2 class="title mb-2">Alias</h2>
+				    <div class="meta mb-3"><span class="date">Published at 2022.02.08 21:00 </span><span class="">Tags: Linux</span></div>
+			    </header>
+			    <div class="blog-post-body">
+                    <p><b>Aliases</b> are special shortcuts that we can set ourselves to run commands or groups of commands in the unix world.</p>
+				    <p>As Unix users, we sometimes need to run a long or complex command very often. At such times, typing the same command over and over can turn into torture. In these cases, it will be much more efficient to define and use aliases.</p>
+                    <p>So how exactly are aliases defined? Let's start with the syntax first.</p>
+                
+				    <h3 class="mt-5 mb-3">1. Syntax</h3>
+
+                        <blockquote class="blockquote m-lg-5 py-3 pl-4 px-lg-5">
+                            <p class="mb-2">alias [name[=value]]</p>
+                        </blockquote>
+                        <ul class="mb-5">
+                            <li class="mb-2">The first <b>alias</b> keyword is a constant.</li>
+                            <li class="mb-2">The <b>name</b> keyword cannot contain spaces. This will be represent your shortcut.</li>
+                            <ul><li>hint: you can use hyphens in long name definitions.</li></ul>
+                            <li class="mb-2">There cannot be spaces on either side of the equal sign.</li>
+                            <li class="mb-2">If the <b>value</b> part contains spaces, it must be written in quotation marks. This will be represent your actual command(s).</li>
+                        </ul>
+
+                    <h3 class="mt-5 mb-3">2. List Exist Alias</h3>
+
+                        <p>We can run "alias" command in terminal to list predefined alias.</p>
+
+                        <figure class="blog-banner">
+                            <img class="img-fluid" src="../Alias/Images/aliasList.png" alt="image">
+                        </figure>
+
+                        <p>As seen in the Ubuntu operating system, there are already some aliases defined.</p>
+
+                    <h3 class="mt-5 mb-3">3. Creating Alias</h3>
+
+                    <p>Creating an alias is not a very difficult task. We can create two different types of aliases, one of them is temporary alias and the other one is permanent alias.</p>
+
+                    <h4 class="mt-6 mb-3" style="margin-left: 5%;">3.1 Temporary Aliases</h4>
+						<p style="margin-left: 5%;">Temporary aliases are only valid for the terminal that is open. After you close the terminal, you will see that all the aliases you defined disappear. First, let's look at the defined aliases with the "alias" command.</p>
+						<figure class="blog-banner" style="margin-left: 5%;">
+							<img class="img-fluid" src="../Alias/Images/aliasList.png" alt="image">
+						</figure>
+						<p style="margin-left: 5%;">Now, let's define an alias to change the current directory to the desktop directory in the terminal that we open. We can use the following syntax for this alias.</p>
+						<pre style="margin-left: 5%;">
+							<code style="color: red;">
+alias desk=”cd /home/yusuf/Desktop”
+							</code>
+						</pre>
+						<figure class="blog-banner" style="margin-left: 5%;">
+							<img class="img-fluid" src="../Alias/Images/2.png" alt="image">
+						</figure>
+
+						<p style="margin-left: 5%;">Let's see the alias we defined and try it by running it.</p>
+						<figure class="blog-banner" style="margin-left: 5%;">
+							<img class="img-fluid" src="../Alias/Images/3.png" alt="image">
+						</figure>
+						<p style="margin-left: 5%;">As you can see, we were able to go directly to the desktop directory.Confirm that the alias is disappeared when the terminal is closed.</p>
+
+
+                    <h4 class="mt-6 mb-3" style="margin-left: 5%;">3.2 Permanent Aliases</h4>
+
+						<p style="margin-left: 5%;">Unlike temporary aliases, permanent aliases are not dependent on whether the terminal is closed, or whether the computer is turned off. Then where are the persistent aliases stored ?</p>
+						<p style="margin-left: 5%;">Permanent aliases can be stored in the following files (It depends on which shell you’re using);</p>
+
+						<ul class="mb-5" style="margin-left: 5%;">
+                            <li class="mb-2">Bash - <b>~/.bashrc</b></li>
+                            <li class="mb-2">ZSH - <b>~/.zshrc</b></li>
+                            <li>Fish - <b>~/.config/fish/config.fish</b></li></ul>
+						</ul>
+						<p style="margin-left: 5%;">It is stored in ~/.bashrc file by default in ubuntu operating system. So let's see what's inside the ~/.bashrc file. I will use vim editor to edit at the same time. You can use gedit, nano or any text editor to edit file.</p>
+						<pre style="margin-left: 5%;"><code style="color: red;">
+vim ~/.bashrc
+						</code></pre>
+						<figure class="blog-banner" style="margin-left: 5%;">
+							<img class="img-fluid" src="../Alias/Images/4.png" alt="image">
+						</figure>
+						<p style="margin-left: 5%;">You can see the permanent aliases above. Now let's add a permanent alias ourselves. For this, I will go to the bottom of the opened file and define the alias by following the syntax rules we have stated above.</p>
+						<figure class="blog-banner" style="margin-left: 5%;">
+							<img class="img-fluid" src="../Alias/Images/5.png" alt="image">
+						</figure>
+						<p style="margin-left: 5%;">I again defined an alias to change current directory to desktop faster. Then I saved the changes I made and closed the file. After that, there is only one thing left to do and that is to run the following command to use the <b>updated</b> version of the "~/.bashrc" file.</p>
+						<p style="margin-left: 5%;">If you do not update the file you will be using the old version of the file and you will not be able to run new alias.</p>
+						<pre style="margin-left: 5%;"><code style="color: red;">
+source  ~/.bashrc
+						</code></pre>
+						<figure class="blog-banner" style="margin-left: 5%;">
+							<img class="img-fluid" src="../Alias/Images/6.png" alt="image">
+						</figure>
+						<p style="margin-left: 5%;">Now we can run the alias that we create in another terminal.</p>
+						<figure class="blog-banner" style="margin-left: 5%;">
+							<img class="img-fluid" src="../Alias/Images/7.png" alt="image">
+						</figure>
+						<p style="margin-left: 5%;">As you can see, we were able to go directly to the desktop directory. Confirm that the alias we created works in another terminal.</p>
+
+						<h3 class="mt-5 mb-3">4. Creating Alias</h3>
+						<p>In this section I want to show you a few useful alias, some of which I also use.</p>
+							<h4 style="margin-left: 5%;">4.1 General Purpose Aliases</h4>
+								<p style="margin-left: 5%;">Here are a few alias that can be used in general purpose.</p>
+								<pre style="margin-left: 5%;"><code style="color: red;">
+alias c='clear'
+alias showports='sudo netstat -tulpn'
+								</code></pre>
+							<h4 style="margin-left: 5%;">4.2 Directory Aliases</h4>
+								<p style="margin-left: 5%;">You can define aliases for directories that you constantly change.</p>
+								<pre style="margin-left: 5%;"><code style="color: red;">
+alias cdws='cd /home/yusuf/Desktop/workspace'
+alias cdlog='cd /space/log'
+								</code></pre>
+							<h4 style="margin-left: 5%;">4.3 Script Starter Aliases</h4>
+								<p style="margin-left: 5%;">You can define aliases for scripts that you run often.</p>
+								<pre style="margin-left: 5%;"><code style="color: red;">
+alias startservices='cd /home/yusuf/Desktop/myworkspace/scripts; ./starter.sh'
+								</code></pre>					
+							<h4 style="margin-left: 5%;">4.4 Git Aliases</h4>
+								<p style="margin-left: 5%;">If you are using git via terminal like me, you can define aliases similar to the ones below.</p>
+								<pre style="margin-left: 5%;"><code style="color: red;">
+alias ga='git add'
+alias gb='git branch'
+alias gf='git diff'
+alias gs='git status'
+								</code></pre>
+							<h4 style="margin-left: 5%;">4.5 SSH Aliases</h4>
+								<p style="margin-left: 5%;">You can name ssh commands with aliases instead of memorizing the IP’s of the servers you connect using an SSH connection.</p>
+								<pre style="margin-left: 5%;"><code style="color: red;">
+alias 'company-prod-mongo'='ssh root@127.0.0.0'
+alias 'company-test-mongo'='ssh root@127.0.0.1'
+								</code></pre>
+								<p style="margin-left: 5%;">  hint: you need to define with your configuration </p>
+							<h4 style="margin-left: 5%;">4.6 Maven Aliases</h4>
+								<p style="margin-left: 5%;">Alias can be defined within maven commands.</p>
+								<pre style="margin-left: 5%;"><code style="color: red;">
+alias mci='mvn clean install -U'
+alias mcits='mvn clean install -U -Dmaven.test.skip=true'
+								</code></pre>
+
+
+
+				
+				    
+			    <nav class="blog-nav nav nav-justified my-5">
+				  <a class="nav-link-prev nav-item nav-link rounded-left" href="../../../index.html">Previous<i class="arrow-prev fas fa-long-arrow-alt-left"></i></a>
+				  <a class="nav-link-next nav-item nav-link rounded-right" href="../../../index.html">Next<i class="arrow-next fas fa-long-arrow-alt-right"></i></a>
+				</nav>
+				
+				
+				
+		    </div><!--//container-->
+	    </article>
+	    
+	
+    </div><!--//main-wrapper-->
+    
+
+</body>
+</html> 
+

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>Alias</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yusuf Şengün">
+    <meta name="author" content="Alias">    
+   
+
+    <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
+  
+    <link id="theme-style" rel="stylesheet" href="../../../assets/css/theme-1.css">
+    
+
+</head> 
+
+<body>
+    
+    <header class="header text-center">	    
+	    <h1 class="blog-name pt-lg-4 mb-0"><a href="../../../indexTR.html">Yusuf'un Blogu</a></h1>
+        
+	    <nav class="navbar navbar-expand-lg navbar-dark" >
+           
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div id="navigation" class="collapse navbar-collapse flex-column" >
+				<div class="profile-section pt-3 pt-lg-0">
+				    <img class="profile-image mb-3 rounded-circle mx-auto" src="../../../assets/images/profile.png" alt="image" >			
+					
+					<div class="bio mb-3">Merhaba, ismim Yusuf Şengün. Şu anda İstanbul Kültür Üniversitesinde öğrenciyim aynı zamanda Telenity'de çalışıyorum.<br><a href="../../../aboutTR.html">Hakkımda daha fazlabilgi için</a></div>
+					<ul class="social-list list-inline py-3 mx-auto">
+						<li class="list-inline-item"><a href="https://twitter.com/yusufsngn" target="_blank"><i class="fab fa-twitter fa-fw"></i></a></li>
+			            <li class="list-inline-item"><a href="https://www.linkedin.com/in/yusuf-%C5%9Feng%C3%BCn-3a3784193/" target="_blank"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
+			            <li class="list-inline-item"><a href="https://github.com/yusuf-sengun" target="_blank"><i class="fab fa-github-alt fa-fw" ></i></a></li>
+			            <li class="list-inline-item"><a href="https://stackoverflow.com/users/13859175/yusuf-%c5%9eeng%c3%bcn" target="_blank"><i class="fab fa-stack-overflow fa-fw"></i></a></li>
+			         </ul><!--//social-list-->
+					 <p>yusuffsengun@gmail.com</p>
+			        <hr> 
+				</div><!--//profile-section-->
+				
+				<ul class="navbar-nav flex-column text-left">
+					<li class="nav-item">
+					    <a class="nav-link" href="../../../indexTR.html"><i class="fas fa-home fa-fw mr-2"></i>Ana Sayfa<span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+					    <a class="nav-link" href="../../../aboutTR.html"><i class="fas fa-user fa-fw mr-2"></i>Hakkımda</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+    </header>
+    
+    <div class="main-wrapper">
+	    
+	    <article class="blog-post px-3 py-5 p-md-5">
+		    <div class="container">
+				<div style="position: fixed;top:10px;right:20px;">
+					<p>TR/<a href="./Alias.html" style="color:darkgreen;">EN</a></p>
+				</div>
+			    <header class="blog-post-header">
+				    <h2 class="title mb-2">Alias</h2>
+				    <div class="meta mb-3"><span class="date">Yayınlanma Tarihi: 2022.02.08 21:00 </span><span class="">Etiketler: Linux</span></div>
+			    </header>
+			    <div class="blog-post-body">
+					<p><b>Alias</b>lar, unix dünyasında komutları veya komut gruplarını çalıştırmak için kendimize özel oluşturabileceğimiz kısayollardır.</p>
+                    <p>Unix kullanıcıları olarak bazen defalarca uzun veya karmaşık bir komut çalıştırmamız, yada belirli bir komutu sürekli kullanmamız gerkiyor. Böyle zamanlarda aynı komutu tekrar tekrar yazmak işkenceye dönüşebilir. Bu durumlarda aliasları tanımlamak ve kullanmak çok daha verimli olacaktır.</p>
+					<p>Peki aliaslar tam olarak nasıl tanımlanır? Önce syntax ile başlayalım.</p>
+				
+				    <h3 class="mt-5 mb-3">1. Syntax</h3>
+
+                        <blockquote class="blockquote m-lg-5 py-3 pl-4 px-lg-5">
+                            <p class="mb-2">alias [name[=value]]</p>
+                        </blockquote>
+                        <ul class="mb-5">
+                            <li class="mb-2"><b>alias</b>  kelime anahtarı bir sabittir. </li>
+                            <li class="mb-2"><b>name</b> kelime anahtarı boşluk içeremez. Bu değer bizim kısa yolumuzu temsil edecek.</li>
+                            <ul><li>Uzun tanımlamalarda boşluk yerine kısa çizgi kullanılabilir.</li></ul>
+                            <li class="mb-2">Eşittir işaretinin her iki tarafında da boşluk olamaz.</li>
+							<li><b>value</b> kelime anahatarı boşluk içeriyor ise tırnak işareti içerisinde kullanılmalıdır. Bu değer bizim aslında çalıştırmak istediğimiz komut(ları) temsil edicek.</li>
+						</ul>
+
+                    <h3 class="mt-5 mb-3">2. Mevcut Aliasları Listelemek</h3>
+
+                        <p>Önceden tanımlanmış aliasları listelemek için terminalde "alias" komutunu çalıştırabiliriz.</p>
+
+                        <figure class="blog-banner">
+                            <img class="img-fluid" src="../Alias/Images/aliasList.png" alt="image">
+                        </figure>
+
+                        <p>Ubuntu işletim sisteminde görüldüğü gibi, zaten tanımlanmış bazı aliaslar vardır.</p>
+
+                    <h3 class="mt-5 mb-3">3. Alias Oluşturma</h3>
+
+                    <p>Alias oluşturmak çok zor bir iş değildir. Bir geçici ve bir kalıcı alias olmak üzere iki farklı türde alias oluşturabiliriz. Geçici alias oluşturmak ile başlayalım.</p>
+
+                    <h4 class="mt-6 mb-3" style="margin-left: 5%;">3.1 Geçici Aliaslar</h4>
+						<p style="margin-left: 5%;">Geçici aliaslar yalnızca açık olan terminal için geçerlidir. Terminali kapattıktan sonra tanımladığınız tüm aliasların kaybolduğunu göreceksiniz. İlk olarak, "alias" komutu ile tanımlanan aliaslara bakalım.</p>
+						<figure class="blog-banner" style="margin-left: 5%;">
+							<img class="img-fluid" src="../Alias/Images/aliasList.png" alt="image">
+						</figure>
+						<p style="margin-left: 5%;">Şimdi bulunduğumuz dizinden masaüstüne geçiş yapmak için açtığımız terminal’de bir alias tanımlayalım. Bu alias için aşağıdaki komutu kullanabiliriz.</p>
+						<pre style="margin-left: 5%;">
+							<code style="color: red;">
+alias desk=”cd /home/yusuf/Desktop”
+							</code>
+						</pre>
+						<figure class="blog-banner" style="margin-left: 5%;">
+							<img class="img-fluid" src="../Alias/Images/2.png" alt="image">
+						</figure>
+
+						<p style="margin-left: 5%;">Tanımladığımız aliası görelim ve çalıştırarak deneyelim.</p>
+						<figure class="blog-banner" style="margin-left: 5%;">
+							<img class="img-fluid" src="../Alias/Images/3.png" alt="image">
+						</figure>
+						<p style="margin-left: 5%;">Gördüğünüz gibi doğrudan masaüstü dizinine geçebildik. Terminal kapatıldığında aliasın kaybolduğunu doğrulayalım.</p>
+
+
+                    <h4 class="mt-6 mb-3" style="margin-left: 5%;">3.2 Kalıcı Aliaslar</h4>
+						<p style="margin-left: 5%;">Geçici aliaslardan farklı olarak, kalıcı aliaslar, terminalin kapalı olup olmamasına veya bilgisayarın kapatılmasına bağlı değildir. Peki kalıcı aliaslar nerede saklanır?</p>
+						<p style="margin-left: 5%;">Kalıcı aliaslar aşağıdaki dosyalarda saklanabilir (Hangi unix kabuğunu kullandığınıza bağlıdır);</p>
+
+						<ul class="mb-5" style="margin-left: 5%;">
+                            <li class="mb-2">Bash - <b>~/.bashrc</b></li>
+                            <li class="mb-2">ZSH - <b>~/.zshrc</b></li>
+                            <li>Fish - <b>~/.config/fish/config.fish</b></li></ul>
+						</ul>
+						<p style="margin-left: 5%;">Ubuntu işletim sisteminde varsayılan olarak ~/.bashrc dosyasında saklanır. Şimdi ~/.bashrc dosyasının içinde ne olduğunu görelim. Dosyayı aynı anda düzenlemek için vim editörünü kullanacağım. Sizde gedit, nano yada istediğiniz bir başka text editörünü kullanabilirsiniz. </p>
+						<pre style="margin-left: 5%;"><code style="color: red;">
+vim ~/.bashrc
+						</code></pre>
+						<figure class="blog-banner" style="margin-left: 5%;">
+							<img class="img-fluid" src="../Alias/Images/4.png" alt="image">
+						</figure>
+						<p style="margin-left: 5%;">Kalıcı aliasları yukarıda görebilirsiniz. Şimdi kendimize kalıcı bir alias ekleyelim. Bunun için açılan dosyanın en altına ineceğim ve yukarıda belirttiğimiz syntax  kurallarını takip ederek aliası tanımlayacağım.</p>
+						<figure class="blog-banner" style="margin-left: 5%;">
+							<img class="img-fluid" src="../Alias/Images/5.png" alt="image">
+						</figure>
+						<p style="margin-left: 5%;">Geçerli dizini masaüstü ile  daha hızlı değiştirmek için tekrar bir alias tanımladım. Sonra yaptığım değişiklikleri kaydedip dosyayı kapattım. Bundan sonra yapılacak tek bir şey kaldı ve o da "~/.bashrc" dosyasının mevcut sürümünü kullanmak için aşağıdaki komutu çalıştırmaktır.</p>
+						<p style="margin-left: 5%;">Eğer dosyayı güncellemezsek bashrc dosyasının eski versiyonunu kullanmış oluruz ve bu yüzden yeni tanımladığımız aliası çalıştıramayız.</p>
+					
+						<pre style="margin-left: 5%;"><code style="color: red;">
+source  ~/.bashrc
+						</code></pre>
+						<figure class="blog-banner" style="margin-left: 5%;">
+							<img class="img-fluid" src="../Alias/Images/6.png" alt="image">
+						</figure>
+						<p style="margin-left: 5%;">Artık oluşturduğumuz aliası başka bir terminalde çalıştırabiliriz.</p>
+						<figure class="blog-banner" style="margin-left: 5%;">
+							<img class="img-fluid" src="../Alias/Images/7.png" alt="image">
+						</figure>
+						<p style="margin-left: 5%;">Görüldüğü gibi Desktop dizinine tek bir komut ile geçebildik. Oluşturduğumuz aliasın başka bir terminalde çalıştığını doğrulayın.</p>
+
+						<h3 class="mt-5 mb-3">4. Kullanışlı  Aliaslar</h3>
+						<p>Bu bölümde size bazılarını benim de kullandığım birkaç faydalı alias göstermek istiyorum.</p>
+							<h4 style="margin-left: 5%;">4.1 Genel Amaçlı Aliaslar</h4>
+								<p style="margin-left: 5%;">Genel amaçlı kullanılabilecek birkaç alias.</p>
+								<pre style="margin-left: 5%;"><code style="color: red;">
+alias c='clear'
+alias showports='sudo netstat -tulpn'
+								</code></pre>
+							<h4 style="margin-left: 5%;">4.2 Dosya Aliasları</h4>
+								<p style="margin-left: 5%;">Sürekli değiştirdiğiniz dizinler için alias tanımlayabilirsiniz.</p>
+								<pre style="margin-left: 5%;"><code style="color: red;">
+alias cdws='cd /home/yusuf/Desktop/workspace'
+alias cdlog='cd /space/log'
+								</code></pre>
+							<h4 style="margin-left: 5%;">4.3 Script Başlatıcı Aliaslar</h4>
+								<p style="margin-left: 5%;">Çalıştımrak istediğiniz scriptler içinde aynı zamanda alias tanımlıyabilrsiniz.</p>
+								<pre style="margin-left: 5%;"><code style="color: red;">
+alias startservices='cd /home/yusuf/Desktop/myworkspace/scripts; ./starter.sh'
+								</code></pre>					
+							<h4 style="margin-left: 5%;">4.4 Git Aliasları</h4>
+								<p style="margin-left: 5%;">Eğer benim gibi git’i  terminal üzerinden kullanıyorsanız, aşağıdakine benzer aliaslar tanımlayabilirsiniz.</p>
+								<pre style="margin-left: 5%;"><code style="color: red;">
+alias ga='git add'
+alias gb='git branch'
+alias gf='git diff'
+alias gs='git status'
+								</code></pre>
+							<h4 style="margin-left: 5%;">4.5 SSH Aliasları</h4>
+								<p style="margin-left: 5%;">SSH bağlantısı kullanarak bağlandığınız sunucuların IP'lerini ezberlemek yerine ssh komutlarını aliaslar ile adlandırabilirsiniz.</p>
+								<pre style="margin-left: 5%;"><code style="color: red;">
+alias 'company-prod-mongo'='ssh root@127.0.0.0'
+alias 'company-test-mongo'='ssh root@127.0.0.1'
+								</code></pre>
+							<h4 style="margin-left: 5%;">4.6 Maven Aliasları</h4>
+								<p style="margin-left: 5%;">Aliaslar, maven komutları içinde tanımlanabilir.</p>
+								<pre style="margin-left: 5%;"><code style="color: red;">
+alias mci='mvn clean install -U'
+alias mcits='mvn clean install -U -Dmaven.test.skip=true'
+								</code></pre>
+			    <nav class="blog-nav nav nav-justified my-5">
+				  <a class="nav-link-prev nav-item nav-link rounded-left" href="../../../indexTR.html">Previous<i class="arrow-prev fas fa-long-arrow-alt-left"></i></a>
+				  <a class="nav-link-next nav-item nav-link rounded-right" href="../../../indexTR.html">Next<i class="arrow-next fas fa-long-arrow-alt-right"></i></a>
+				</nav>
+				
+				
+				
+		    </div><!--//container-->
+	    </article>
+	    
+	
+    </div><!--//main-wrapper-->
+    
+
+</body>
+</html> 
+
